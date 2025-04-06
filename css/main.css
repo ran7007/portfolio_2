@@ -244,9 +244,8 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 #Profile .inner{padding: 150px 20px;}
 #Profile h2 {font-size: 3rem; padding-bottom: 50px;}
 #Profile .content{display: flex;  gap: 120px; align-items: center;}
-#Profile .content .profile_img {position: relative;}
 #Profile .content .profile_img img {max-width: 890px; height: 804px; 
-   transition:  opacity 0.3s ease-in-out; position: absolute; top: 0; left: 0;}
+   transition:  opacity 0.3s ease-in-out; position: absolute; /* top: 0; left: 0; */}
 #Profile .content  .profile_img:hover .img2{opacity: 1;}
 #Profile .content  .profile_img:hover .img1 {opacity: 0;}
 #Profile .content .profile_img .img1 {opacity: 1;}
@@ -311,17 +310,17 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 #Project .items ul li:nth-of-type(3) .link_go .link_1 a,
 #Project .items ul li:nth-of-type(4) .link_go .link_1 a,
 #Project .items ul li:nth-of-type(6) .link_go .link_1 a
-{background: rgba(0,0,0,0.5); color: #fff; padding: 20px 102px; display: block; cursor: pointer; width: 50%}
+{background: rgba(0,0,0,0.5); color: #fff; padding: 20px 0; display: block; cursor: pointer; width: 100%}
 
 #Project .items ul li:nth-of-type(1) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(3) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(4) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(6) .link_go .link_2
-{background: rgba(255,255,255,0.5); padding: 20px 102px; width: 50%; display: block; cursor: pointer;}
+{background: rgba(255,255,255,0.5); padding: 20px 0; width: 100%; display: block; cursor: pointer;}
 
 #Project .items ul li:nth-of-type(2) .link_go .link_2,
 #Project .items ul li:nth-of-type(5) .link_go .link_2,
-#Project .items ul li:nth-of-type(7) .link_go .link_2 {background: rgba(255,255,255,0.5); padding: 20px 102px; display: block; cursor: pointer;}
+#Project .items ul li:nth-of-type(7) .link_go .link_2 {background: rgba(255,255,255,0.5); padding: 20px 0; display: block; cursor: pointer;}
 
 #Project .items ul li:nth-of-type(5) .link_go .link_2 img {object-fit: contain;}
 
@@ -413,7 +412,7 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 @media (max-width:500px) {
 .popup { left: 50%; top: 50%; transform: translate(-50%, -50%); width: 450px; height: 900px; overflow:hidden;}
 .popup .inner {display: flex; flex-direction: column;}
-.popup .inner .popup_img { width: 450px; height: 900px}
+.popup .inner .popup_img { width: 450px; height: 900px;} 
 .popup .inner img { width: 100%; overflow: scroll;}
 .popup .inner .popup_text {padding: 50px 25px}
 .popup .inner .popup_text h3 {font-size: 2rem;}
