@@ -110,3 +110,20 @@ $(".click3_1").click(function () {
 $(".popup_close").click(function () {
     $(".popup7").fadeOut();
 });
+
+//3단-2
+$(".click3_2").click(function () {
+    $(".popup8").fadeIn();
+});
+$(".popup_close").click(function () {
+    $(".popup8").fadeOut();
+});
+
+
+//3단-3
+$(".click3_3").click(function () {
+    $(".popup9").fadeIn();
+});
+$(".popup_close").click(function () {
+    $(".popup9").fadeOut();
+});

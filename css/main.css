@@ -308,18 +308,22 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 
 #Project .items ul li:nth-of-type(1) .link_go .link_1 a,
 #Project .items ul li:nth-of-type(3) .link_go .link_1 a,
-#Project .items ul li:nth-of-type(4) .link_go .link_1 a,
-#Project .items ul li:nth-of-type(6) .link_go .link_1 a
+#Project .items ul li:nth-of-type(4) .link_go .link_1 a
 {background: rgba(0,0,0,0.5); color: #fff; padding: 20px 0; display: block; cursor: pointer; width: 100%}
+
+#Project .items ul li:nth-of-type(9) .link_go .link_1 a {
+    background: rgba(255,255,255,0.5); color: #fff; padding: 20px 0; display: block; cursor: pointer; width: 100%
+}
 
 #Project .items ul li:nth-of-type(1) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(3) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(4) .link_go .link_2 a,
-#Project .items ul li:nth-of-type(6) .link_go .link_2
-{background: rgba(255,255,255,0.5); padding: 20px 0; width: 100%; display: block; cursor: pointer;}
+#Project .items ul li:nth-of-type(9) .link_go .link_2 a
+{background: rgba(255,255,255,0.8); padding: 20px 0; width: 100%; display: block; cursor: pointer;}
 
 #Project .items ul li:nth-of-type(2) .link_go .link_2,
 #Project .items ul li:nth-of-type(5) .link_go .link_2,
+#Project .items ul li:nth-of-type(6) .link_go .link_2,
 #Project .items ul li:nth-of-type(7) .link_go .link_2 {background: rgba(255,255,255,0.5); padding: 20px 0; display: block; cursor: pointer;}
 
 #Project .items ul li:nth-of-type(5) .link_go .link_2 img {object-fit: contain;}
@@ -331,7 +335,9 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 #Project .items ul .item_con:nth-child(3):before{content: "#Website"; position: absolute; top: 10px; left: 20px;}
 #Project .items ul .item_con:nth-child(4):before{content: "#Website"; position: absolute; top: 10px; left: 20px;}
 #Project .items ul .item_con:nth-child(5):before{content: "#Design - Logo"; position: absolute; top: 10px; left: 20px;}
-#Project .items ul .item_con:nth-child(6):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px;}
+#Project .items ul .item_con:nth-child(6):before{content: "#Design - Banner"; position: absolute; top: 10px; left: 20px;}
+#Project .items ul .item_con:nth-child(7):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px;}
+#Project .items ul .item_con:nth-child(9):before{content: "#Website - Group project"; position: absolute; top: 10px; left: 20px; color: #fff;}
 
 
 @media (max-width:500px) {
