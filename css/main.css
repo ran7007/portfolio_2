@@ -322,9 +322,10 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 {background: rgba(255,255,255,0.8); padding: 20px 0; width: 100%; display: block; cursor: pointer;}
 
 #Project .items ul li:nth-of-type(2) .link_go .link_2,
-#Project .items ul li:nth-of-type(9) .link_go .link_2,
 #Project .items ul li:nth-of-type(6) .link_go .link_2,
-#Project .items ul li:nth-of-type(7) .link_go .link_2 {background: rgba(255,255,255,0.5); padding: 20px 0; display: block; cursor: pointer;}
+#Project .items ul li:nth-of-type(7) .link_go .link_2,
+#Project .items ul li:nth-of-type(8) .link_go .link_2,
+#Project .items ul li:nth-of-type(9) .link_go .link_2{background: rgba(255,255,255,0.5); padding: 20px 0; display: block; cursor: pointer;}
 
 #Project .items ul li:nth-of-type(9) .link_go .link_2 img {object-fit: contain;}
 
@@ -337,6 +338,7 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 #Project .items ul .item_con:nth-child(5):before{content: "#Website - Group project"; position: absolute; top: 10px; left: 20px; color: #fff;}
 #Project .items ul .item_con:nth-child(6):before{content: "#Design - Banner"; position: absolute; top: 10px; left: 20px;}
 #Project .items ul .item_con:nth-child(7):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px;}
+#Project .items ul .item_con:nth-child(8):before{content: "#Ect - Video"; position: absolute; top: 10px; left: 20px;}
 #Project .items ul .item_con:nth-child(9):before{content: "#Design - Logo"; position: absolute; top: 10px; left: 20px;}
 
 
@@ -353,16 +355,16 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 #Project .items ul li:nth-of-type(3).link_go .link_1 a, 
 #Project .items ul li:nth-of-type(4) .link_go .link_1 a,
 #Project .items ul li:nth-of-type(6) .link_go .link_1 a {
-    width: 202.5px; font-size: 1.5rem; padding: 20px 0; 
+   font-size: 1.5rem; padding: 20px 0; 
 }
 #Project .items ul li:nth-of-type(1) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(3) .link_go .link_2 a,
 #Project .items ul li:nth-of-type(4) .link_go .link_2 a,
-#Project .items ul li:nth-of-type(6) .link_go .link_2 { width: 202.5px; font-size: 1.5rem; padding: 20px 0; }
+#Project .items ul li:nth-of-type(6) .link_go .link_2 { font-size: 1.5rem; padding: 20px 0; }
 
 #Project .items ul li:nth-of-type(2) .link_go li,
 #Project .items ul li:nth-of-type(5) .link_go li,
-#Project .items ul li:nth-of-type(7) .link_go .link_2 {width: 405px; font-size: 1.5rem; padding: 20px 0;}
+#Project .items ul li:nth-of-type(7) .link_go .link_2 {font-size: 1.5rem; padding: 20px 0;}
 
 #Project .items ul .item_con:nth-child(1):before,
 #Project .items ul .item_con:nth-child(2):before,
@@ -410,6 +412,8 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 .popup .inner .popup_img {max-width: 1000px; height: 900px; overflow-y: scroll;}
 .popup .inner img { width: 100%;  overflow-y: scroll;}
  .popup7 p:nth-of-type(3){padding-top: 0 !important; font-size: 1.2rem; padding-bottom: 30px;}
+
+ .popup8 video {width: 100%; padding-top: 10px;}
 
 .popup .inner .link {padding-top: 30px; cursor: pointer;}
 
