@@ -411,7 +411,7 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 
 
 
-.popup {display: none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1720px; height: 900px; overflow:hidden; background: #fff;}
+.popup {display: none; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1720px; height: 900px; overflow:hidden; background: #fff;  z-index: 3}
 
 .popup .inner {display: flex;  justify-content: space-between; padding: 0;}
 .popup .inner .popup_text {padding: 200px 50px 0; overflow: hidden; word-break:keep-all; font-size: 1.5rem;}
