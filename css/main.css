@@ -28,8 +28,11 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 #main .inner .main_top,
 #main .inner .main_bottom {display: flex; align-items: center; }
 
+/* #main .inner .main_top img,
+#main .inner .main_bottom img {display: block; position: relative; animation: scatter 1.75s infinite;} */
+
 #main .inner .main_top img,
-#main .inner .main_bottom img {display: block; position: relative; animation: scatter 1.75s infinite;}
+#main .inner .main_bottom img {display: block; animation: scatter 1.75s infinite;}
 
 #main::before {content: "" ; position: absolute; background: url(../img/main/img4.png) no-repeat; top: 0; left: 0; transform: translate(54%,230%); width: 150px; height: 170px; z-index: 1; animation: scatter 1.75s infinite; animation-delay: 0.3s;}
 
@@ -39,11 +42,22 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 #main .inner .main_top::after {content:""; background: url(../img/main/img1.png) no-repeat; position: absolute; width: 460px; height: 400px;
 right: 0; top: 0; transform: translate(-2vw,17vh);animation: scatter 1.75s infinite;}
 
-#main .inner .main_top img:nth-child(1) {left: 0; transform: translateX(-5%); animation-delay: 0.3s;}
+/* #main .inner .main_top img:nth-child(1) {left: 0; transform: translateX(-5%); animation-delay: 0.3s;}
 #main .inner .main_top img:nth-child(2) {top:0; left: 0; transform: translate(-5%,30%); z-index: 2; animation-delay: 0.15s; max-width: 150px; width: auto; height: auto;}
 #main .inner .main_top img:nth-child(3) {left: 0; transform: translateX(-30%); animation-delay: 0.4s;}
 #main .inner .main_top img:nth-child(4) {left: 0; transform: translateX(-30%); animation-delay: 0.25s;}
-#main .inner .main_top img:nth-child(5) {left: 0; transform: translateX(-30%);animation-delay: 0.3s;}
+#main .inner .main_top img:nth-child(5) {left: 0; transform: translateX(-30%);animation-delay: 0.3s;} */
+#main .inner .main_top, #main .inner .main_bottom { position: relative; }
+
+#main .inner .main_top img:nth-child(1) { animation-delay: 0.3s;}
+#main .inner .main_top img:nth-child(2) { position: absolute; bottom: 0;  z-index: 2; animation-delay: 0.15s; left: 20vw; }
+#main .inner .main_top img:nth-child(3) {position: absolute; animation-delay: 0.4s; left: 25vw;}
+#main .inner .main_top img:nth-child(4) {left: 40vw; position: absolute; animation-delay: 0.25s;}
+#main .inner .main_top img:nth-child(5) {left: 40vw; position: absolute; animation-delay: 0.3s;}
+
+@media (max-width:1000px) {
+    #main .inner .main_top { transform: scale(0.5);}
+}
 
 /* bottom */
 #main .inner .main_bottom::after {content: ""; background: url(../img/main/img2.png)no-repeat;  width: 300px; height: 310px; top: 0; left: 0; transform: translate(37vw,30vh); position: absolute; animation: scatter 1.75s infinite;}
@@ -161,9 +175,8 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 
 
 @keyframes scatter {
-    0% {top: 0;}
-    50% {top:-15px;}
-    100%{top:0;}
+    0%,100% { transform: translate(0,0);}
+    50% {transform: translate(0,-15px);}
 }
 
 @keyframes scale {
