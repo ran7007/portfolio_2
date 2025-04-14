@@ -402,7 +402,7 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 /* keyword */
 #Project .items ul .item_con:nth-child(1):before{content: "#Website"; position: absolute; top: 10px; left: 20px; color: #fff;}
 #Project .items ul .item_con:nth-child(2):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px; color: #fff;}
-#Project .items ul .item_con:nth-child(3):before{content: "#Website"; position: absolute; top: 10px; left: 20px;}
+#Project .items ul .item_con:nth-child(3):before{content: "#Website"; position: absolute; top: 10px; left: 20px; color: #fff;}
 #Project .items ul .item_con:nth-child(4):before{content: "#Website"; position: absolute; top: 10px; left: 20px;}
 #Project .items ul .item_con:nth-child(5):before{content: "#Website - Group project"; position: absolute; top: 10px; left: 20px; color: #fff;}
 #Project .items ul .item_con:nth-child(6):before{content: "#Design - Banner"; position: absolute; top: 10px; left: 20px;}
