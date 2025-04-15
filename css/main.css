@@ -280,7 +280,7 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 }
 
 @media (max-width:450px) {
-    #skills {height: 170vh;}
+    #skills {height: 140vh;}
     #skills .dt_con {gap: 40px;}
 }
 
@@ -350,9 +350,17 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 }
 
 @media (max-width:450px) { 
-    #Profile .content .profile_img img{top: 50%; transform: translateY(6%); width: 300px; filter: brightness(0.4); height: auto; transition:  opacity 0.3s ease-in-out; position: relative;}
+    #Profile .content .profile_img img{top: 50%; transform: translateY(6%); width: 380px; filter: brightness(0.4); height: auto; transition:  opacity 0.3s ease-in-out; position: relative;}
      #Profile .profile_text {transform: translate(-44%,40%);
     width: 300px;}
+}
+@media (max-width:380px) {
+     #Profile .content .profile_img img{width: 330px;}
+
+}
+@media (max-width:330px) {
+     #Profile .content .profile_img img{top: 50%; transform: translateY(31%); width: 280px; }
+      #Profile .profile_text {width: 280px;}
 
 }
 
@@ -434,6 +442,10 @@ right: 0; top: 0; transform: translate(15%,43%);animation: scatter 1.75s infinit
 @media (max-width:450px) {
     #Project .pro_tab ul {gap: 5px;}
  #Project .pro_tab ul li button {font-size: 1.3rem;}
+}
+
+@media (max-width:350px) {
+ #Project .pro_tab ul li button {font-size: 1.1rem; padding: 20px 5px;}
 }
 
 
