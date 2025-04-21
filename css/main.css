@@ -362,11 +362,20 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 #Professional h2 {font-size: 3rem; padding-bottom: 30px;}
 #Professional .prof_top {display: flex; align-items: center; gap: 80px;}
 #Professional .prof_top .ptof_left img{max-width: 510px; width: 100%;}
-#Professional .prof_top .prof_rigth h3 {font-size: 2rem; font-weight: 500;}
+#Professional .prof_top .prof_rigth h3 {font-size: 2rem; font-weight: 500; padding-bottom: 20px;}
 #Professional .prof_top .prof_rigth h3>span {
     font-size: 1.5rem;
 }
 
-#Professional .prof_top .prof_rigth .table {
-    padding-top: 50px;
+#Professional .prof_top .prof_rigth table tr th {
+    background-color: #ffeecd; 
+    border-top:1px solid #023D5D;
+     padding: 10px 30px; font-size: 1.5rem; font-weight: 500;
 }
+#Professional .prof_top .prof_rigth table tr th:nth-of-type(1) {
+border-right:1px solid #023D5D;
+}
+
+#Professional .prof_top .prof_rigth table tr td {padding: 30px; font-size: 1.5rem; border-top:1px solid #023D5D; line-height: 1.6;}
+
+#Professional .prof_top .prof_rigth table tr td:nth-last-of-type(1),#Professional .prof_top .prof_rigth table tr:nth-last-of-type(1) {border-bottom:1px solid #023D5D;}
