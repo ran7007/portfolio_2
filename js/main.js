@@ -1,5 +1,5 @@
 const controller = new ScrollMagic.Controller();
-const sections = document.querySelectorAll(".about, .skills, .Profile, .Project");
+const sections = document.querySelectorAll(".about, .skills, .Profile, .Project, .Professional experience");
 
 sections.forEach((section) => {
     TweenLite.set(section, { opacity: 0, y: 100 });
