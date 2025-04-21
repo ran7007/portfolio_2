@@ -359,7 +359,7 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 
 /* Professional experience */
 #Professional {padding: 150px 20px;}
-#Professional h2 {font-size: 3rem; padding-bottom: 30px;}
+#Professional h2 {font-size: 2.5rem; padding-bottom: 30px;}
 #Professional .prof_top {display: flex; align-items: center; gap: 80px;}
 #Professional .prof_top .ptof_left img{max-width: 510px; width: 100%;}
 #Professional .prof_top .prof_rigth h3 {font-size: 2rem; font-weight: 500; padding-bottom: 20px;}
@@ -376,6 +376,6 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 border-right:1px solid #023D5D;
 }
 
-#Professional .prof_top .prof_rigth table tr td {padding: 30px; font-size: 1.5rem; border-top:1px solid #023D5D; line-height: 1.6;}
+#Professional .prof_top .prof_rigth table tr td {padding: 20px 30px; font-size: 1.5rem; border-top:1px solid #023D5D; line-height: 1.6;}
 
 #Professional .prof_top .prof_rigth table tr td:nth-last-of-type(1),#Professional .prof_top .prof_rigth table tr:nth-last-of-type(1) {border-bottom:1px solid #023D5D;}
