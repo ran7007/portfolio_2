@@ -108,6 +108,14 @@ $(".click1").click(function () {
 $(".popup_close").click(function () {
     $(".popup1").fadeOut();
 });
+$(document).mouseup(function (e) {
+    var popup = $(".popup1");
+    if (!$(".popup1").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup1").fadeOut();
+    }
+});
+
 
 
 //1단-2
@@ -116,6 +124,13 @@ $(".click2").click(function () {
 });
 $(".popup_close").click(function () {
     $(".popup2").fadeOut();
+});
+$(document).mouseup(function (e) {
+    var popup = $(".popup2");
+    if (!$(".popup2").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup2").fadeOut();
+    }
 });
 
 
@@ -126,6 +141,13 @@ $(".click3").click(function () {
 $(".popup_close").click(function () {
     $(".popup3").fadeOut();
 });
+$(document).mouseup(function (e) {
+    var popup = $(".popup3");
+    if (!$(".popup3").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup3").fadeOut();
+    }
+});
 
 //2단-1
 $(".click2_1").click(function () {
@@ -133,6 +155,13 @@ $(".click2_1").click(function () {
 });
 $(".popup_close").click(function () {
     $(".popup4").fadeOut();
+});
+$(document).mouseup(function (e) {
+    var popup = $(".popup4");
+    if (!$(".popup4").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup4").fadeOut();
+    }
 });
 
 //2단-2
@@ -142,6 +171,13 @@ $(".click2_2").click(function () {
 $(".popup_close").click(function () {
     $(".popup5").fadeOut();
 });
+$(document).mouseup(function (e) {
+    var popup = $(".popup5");
+    if (!$(".popup5").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup5").fadeOut();
+    }
+});
 
 //2단-3
 $(".click2_3").click(function () {
@@ -150,7 +186,13 @@ $(".click2_3").click(function () {
 $(".popup_close").click(function () {
     $(".popup6").fadeOut();
 });
-
+$(document).mouseup(function (e) {
+    var popup = $(".popup6");
+    if (!$(".popup6").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup6").fadeOut();
+    }
+});
 
 //3단-1
 $(".click3_1").click(function () {
@@ -159,13 +201,26 @@ $(".click3_1").click(function () {
 $(".popup_close").click(function () {
     $(".popup7").fadeOut();
 });
-
+$(document).mouseup(function (e) {
+    var popup = $(".popup7");
+    if (!$(".popup7").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup7").fadeOut();
+    }
+});
 //3단-2
 $(".click3_2").click(function () {
     $(".popup8").fadeIn();
 });
 $(".popup_close").click(function () {
     $(".popup8").fadeOut();
+});
+$(document).mouseup(function (e) {
+    var popup = $(".popup8");
+    if (!$(".popup8").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup8").fadeOut();
+    }
 });
 
 
@@ -175,4 +230,11 @@ $(".click3_3").click(function () {
 });
 $(".popup_close").click(function () {
     $(".popup9").fadeOut();
+});
+$(document).mouseup(function (e) {
+    var popup = $(".popup9");
+    if (!$(".popup9").is(":visible")) return;
+    if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+        $(".popup9").fadeOut();
+    }
 });
