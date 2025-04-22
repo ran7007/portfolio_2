@@ -360,7 +360,7 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 /* Professional experience */
 #Professional {padding: 150px 20px;}
 #Professional h2 {font-size: 2.5rem; padding-bottom: 30px;}
-#Professional .prof_top {display: flex; align-items: center; gap: 80px;}
+#Professional .prof_top {display: flex; align-items: center; gap: 80px; padding-bottom: 100px;}
 #Professional .prof_top .ptof_left img{max-width: 510px; width: 100%;}
 #Professional .prof_top .prof_rigth h3 {font-size: 2rem; font-weight: 500; padding-bottom: 20px;}
 #Professional .prof_top .prof_rigth h3>span {
@@ -368,7 +368,6 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 }
 
 #Professional .prof_top .prof_rigth table tr th {
-    background-color: #ffeecd; 
     border-top:1px solid #023D5D;
      padding: 10px 30px; font-size: 1.5rem; font-weight: 500;
 }
@@ -379,3 +378,71 @@ border-right:1px solid #023D5D;
 #Professional .prof_top .prof_rigth table tr td {padding: 20px 30px; font-size: 1.5rem; border-top:1px solid #023D5D; line-height: 1.6;}
 
 #Professional .prof_top .prof_rigth table tr td:nth-last-of-type(1),#Professional .prof_top .prof_rigth table tr:nth-last-of-type(1) {border-bottom:1px solid #023D5D;}
+
+#Professional .prof_bottom1,
+#Professional .prof_bottom2 {display: flex; gap: 20px; padding-bottom: 20px;}
+
+#Professional .prof_bottom1 img , #Professional .prof_bottom2 img {filter: brightness(0.4); display: block;}
+
+#Professional .prof_top1,
+#Professional .prof_top2,
+#Professional .prof_top3,
+#Professional .prof_top4,
+#Professional .prof_bot1,
+#Professional .prof_bot2,
+#Professional .prof_bot3,
+#Professional .prof_bot4
+{position: relative;}
+
+#Professional .prof_bottom1 p , #Professional .prof_bottom2 p {color: #fff; font-size: 2rem; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 999;}
+
+#Professional .prof_top1 img:nth-child(1),
+#Professional .prof_top2 img:nth-child(1),
+#Professional .prof_top3 img:nth-child(1),
+#Professional .prof_top4 img:nth-child(1),
+#Professional .prof_bot1 img:nth-child(1),
+#Professional .prof_bot2 img:nth-child(1),
+#Professional .prof_bot3 img:nth-child(1),
+#Professional .prof_bot4 img:nth-child(1)
+{transition: all 0.5s; opacity: 1; position: relative;}
+
+#Professional .prof_top1 img:nth-child(2),
+#Professional .prof_top2 img:nth-child(2),
+#Professional .prof_top3 img:nth-child(2),
+#Professional .prof_top4 img:nth-child(2),
+#Professional .prof_bot1 img:nth-child(2),
+#Professional .prof_bot2 img:nth-child(2),
+#Professional .prof_bot3 img:nth-child(2),
+#Professional .prof_bot4 img:nth-child(2)
+ {opacity: 0; transition: all 0.5s; position: absolute; top: 0; left: 0;}
+
+#Professional .prof_top1:hover p,
+#Professional .prof_top2:hover p,
+#Professional .prof_top3:hover p,
+#Professional .prof_top4:hover p,
+#Professional .prof_bot1:hover p,
+#Professional .prof_bot2:hover p,
+#Professional .prof_bot3:hover p,
+#Professional .prof_bot4:hover p
+{opacity: 0; }
+
+#Professional .prof_top1:hover img:nth-child(1),
+#Professional .prof_top2:hover img:nth-child(1),
+#Professional .prof_top3:hover img:nth-child(1),
+#Professional .prof_top4:hover img:nth-child(1),
+#Professional .prof_bot1:hover  img:nth-child(1),
+#Professional .prof_bot2:hover  img:nth-child(1),
+#Professional .prof_bot3:hover  img:nth-child(1),
+#Professional .prof_bot4:hover  img:nth-child(1)
+{opacity: 0;}
+
+#Professional .prof_top1:hover img:nth-child(2),
+#Professional .prof_top2:hover img:nth-child(2),
+#Professional .prof_top3:hover img:nth-child(2),
+#Professional .prof_top4:hover img:nth-child(2),
+#Professional .prof_bot1:hover img:nth-child(2),
+#Professional .prof_bot2:hover img:nth-child(2),
+#Professional .prof_bot3:hover img:nth-child(2),
+#Professional .prof_bot4:hover img:nth-child(2)
+ { opacity: 1; filter: brightness(0.8);
+}
