@@ -30,6 +30,9 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 #main {position: relative; z-index: 0; left: -2.5vw; bottom: 4vw;}
 #main .inner {overflow:visible; padding: 0;}
 #main .inner video {width: 110%; max-width: 1800px; animation: scale 0.7s;}
+#main .inner video[poster] {
+    width: 100%; max-width: 1720px;
+}
 
 @media (max-width:1730px) {
     #header .gnb {padding-left: 30px;}
@@ -49,13 +52,13 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
     #header .inner .ham img {width: 43px; height: 43px;}
 }
 @media (max-width:500px){
-    #header .inner .ham img {width: 23px; height: 3px;}
+        #header .inner .ham img {width: 45px; height: 45px; right:23px }
     #header .mgnb img {margin-right: 40px;}
-    #main .inner video {width: 100%; margin-left: 25px;}
+    #main .inner video {width: 100%; margin-left: -2px;}
     #header .mgnb {width: 100%;}
 }
 @media (max-width:450px)
-{ #main .inner video {width: 90%; margin-top:25px; margin-left: 0;}}
+{ #main .inner video {width: 90%; margin-top:25px; margin-left:-2px;}}
 
 @keyframes scale {
     0% {transform: scale(0.1);}
@@ -102,7 +105,6 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 #about p { font-size: 1.3rem; font-weight: 300;}
  #about::before {content: ""; position: absolute; background: url(../img/about/img1.png) no-repeat; max-width: 120px; width: 100%; height: 120px; top: 50%; right: 0; transform: translateY(-6%); animation: scatter2 1.75s infinite; background-size: contain;}
     #about::after {content: ""; position: absolute;  background: url(../img/about/img2.png) no-repeat; max-width: 120px; width: 100% ;height: 120px; top: 0; right: 0; transform: translate(-65vw,130%); animation: scatter2 1.75s infinite; background-size: contain;}
-    #header .inner .ham img {width: 45px; height: 45px; right:0 }
 }
 
 @media (max-width:450px) {
@@ -148,7 +150,7 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 @media (max-width:500px) {
     #skills .inner {padding: 130px 20px;}
     #skills .con { justify-content: center;}
-    #skills .con img { max-width: 350px; width: 100%; height: 500px; display: block; position: absolute; top: 0; left: 50%; transform: translate(-50%,116%);}
+    #skills .con img { max-width: 350px; width: 100%; height: 500px; display: block; position: absolute; top: 0; left: 50%; transform: translate(-50%,126%);}
     #skills h2 {padding-bottom: 60px; font-size: 2rem;}
     #skills dl dt {font-size: 1.5rem; font-weight: 600; padding: 10px; border-bottom: 1px solid var(--main-font-color); }
     #skills dl dd { padding-bottom: 20px; font-size: 1.2rem;}
@@ -238,21 +240,21 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 }
 
 @media (max-width:500px) {
-     #Profile {margin-top: 0px;}
-    #Profile {height: 80vh;}
-    #Profile .content .profile_img img{ max-width: 450px; transform: translateY(6%);}
+     #Profile {margin-top: 5vw; height:80vh;}
+    #Profile .content .profile_img img{ max-width: 400px; top: 40vw;}
      #Profile .profile_text {transform: translate(-40%,45%);}
+       #Profile .content .profile_img:hover .img2 {
+        display: none;
+       }
 }
 
-@media (max-width:450px) { 
-    #Profile .content .profile_img img{top: 50%; transform: translateY(6%); width: 380px; filter: brightness(0.4); height: auto; transition:  opacity 0.3s ease-in-out; position: relative;}
+@media (max-width:450px) {
+    #Profile {margin-top: 60vw; height:100vh;}
+    #Profile .content .profile_img img{top: 17vw;  width: 300px; filter: brightness(0.4); height: auto; position: relative; transform:translateY(4%)}
      #Profile .profile_text {transform: translate(-44%,40%);
     width: 300px;}
 }
-@media (max-width:380px) {
-     #Profile .content .profile_img img{width: 330px;}
 
-}
 @media (max-width:330px) {
      #Profile .content .profile_img img{top: 50%; transform: translateY(31%); width: 280px; }
       #Profile .profile_text {width: 280px;}
@@ -341,16 +343,22 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 @media (max-width:500px) {
     #Project {padding: 130px 20px;}
 #Project  h2 {font-size: 2rem;}
-#Project .pro_tab ul { gap: 10px; border: 1px solid var(--main-font-color); border-radius: 18px; justify-content: center; width: 100%;}
+#Project .pro_tab ul { gap: 20px; border: 1px solid var(--main-font-color); border-radius: 18px; justify-content: center; width: 100%;}
 #Project .pro_tab ul li button {border: none; background-color: transparent; cursor: pointer; padding: 20px; font-size: 1.5rem; color: #D9D9D9; }
 #Project .pro_tab ul li button.active {color: var(--main-font-color);}
 
 #Project .items ul li img {width: 100%; max-width: 450px; height: 350px;}
-}
+#Project .pro_tab ul li button:nth-child(1){padding-left: 10px;}
+#Project .pro_tab ul li button:nth-last-child(1) {padding-right: 10px;}
+
+
 
 @media (max-width:450px) {
-    #Project .pro_tab ul {gap: 5px;}
  #Project .pro_tab ul li button {font-size: 1.3rem;}
+
+ #Project .pro_tab ul li button:nth-child(1){padding-left: 0;}
+#Project .pro_tab ul li button:nth-last-child(1) {padding-right: 0;}
+}
 }
 
 @media (max-width:350px) {
