@@ -216,7 +216,7 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
        #Profile .inner {padding: 100px 30px;}
 
        #Profile .content .profile_img img {max-width: 600px;}
-       #Profile .profile_text {transform: translate(-10%,-23%);
+       #Profile .profile_text {transform: translate(-10%,-22%);
         font-size : 1.5rem; }
        
 }
