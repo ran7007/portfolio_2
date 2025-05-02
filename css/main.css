@@ -136,8 +136,13 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
     #skills {padding: 0 30px;}
 }
 
+@media (max-width:1500px) {
+    #skills .con img { max-width: 530px; width: 100%; height: 600px; display: block; transform: translateY(-5%);}
+}
+
 @media (max-width:1375px) {
     #skills .con img {transform: translateY(0%); padding-top: 20px; margin-bottom: 20px;}
+    #skills dl dt {font-size: 2rem;}
 
 }
 
@@ -196,21 +201,30 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
      #Profile { padding: 0 30px;}
      #Profile .content .profile_img img {max-width: 790px; height: 704px;}
      #Profile .profile_text {
-        transform: translate(-29%,-63%);
+        transform: translate(-11%,-33%);
      }
+}
 
-
+@media (max-width:1500px) {
+    #Profile .content .profile_img img {max-width: 700px; height: 600px;}
+    #Profile .profile_text {transform: translate(-10%,-30%);
+}
 }
 
 @media (max-width:1376px) {
-       #Profile {margin-top: 300px;}
+       #Profile {margin-top: 10vw; height: 130vh;}
+       #Profile .inner {padding: 100px 30px;}
+
+       #Profile .content .profile_img img {max-width: 600px;}
+       #Profile .profile_text {transform: translate(-10%,-23%);
+        font-size : 1.5rem; }
+       
 }
 
 @media (max-width:990px) {
-   #Profile {height: 100vh;}
+   #Profile {height: 120vh;}
     #Profile .inner{padding: 100px 20px;}
     #Profile h2 {font-size: 2rem; padding-bottom: 40px;}
-    #Profile .profile_text {font-size: 1.5rem;}
     #Profile .profile_text span {font-size: 1.7rem; font-weight: 400;}
     #Profile .profile_text {display: flex; flex-direction: column; gap: 0; left: 50%; top: 0; transform: translate(-40%,70%); width: 100%;}
     #Profile .content .profile_img img{transform: translateY(6%); max-width: 700px; filter: brightness(0.4); height: auto; transition:  opacity 0.3s ease-in-out;}
@@ -240,7 +254,7 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 }
 
 @media (max-width:500px) {
-     #Profile {margin-top: 5vw; height:80vh;}
+     #Profile {margin-top: 28vw; height:90vh;}
     #Profile .content .profile_img img{ max-width: 400px; top: 40vw;}
      #Profile .profile_text {transform: translate(-40%,45%);}
        #Profile .content .profile_img:hover .img2 {
@@ -276,7 +290,7 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
     padding-right: 30px;
 }
 
-#Project .items>ul{display: flex; align-items: center; justify-content:flex-start; padding-top: 50px; gap: 30px; flex-wrap: wrap; position: relative;}
+#Project .items>ul{display: flex; align-items: center; justify-content:center; padding-top: 50px; gap: 30px; flex-wrap: wrap; position: relative;}
 
 #Project .items ul .item_con { width: 100%; max-width: 530px; position: relative;}
 
@@ -313,20 +327,17 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 
 
 /* keyword */
-#Project .items ul .item_con:nth-child(1):before{content: "#Website"; position: absolute; top: 10px; left: 20px; color: #fff;}
-#Project .items ul .item_con:nth-child(2):before{content: "#Website"; position: absolute; top: 10px; left: 20px;}
-#Project .items ul .item_con:nth-child(3):before{content: "#Website"; position: absolute; top: 10px; left: 20px; color: #fff;}
-#Project .items ul .item_con:nth-child(4):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px; color: #fff;}
-#Project .items ul .item_con:nth-child(5):before{content: "#Website - Group project"; position: absolute; top: 10px; left: 20px; color: #fff;}
-#Project .items ul .item_con:nth-child(6):before{content: "#Design - Banner"; position: absolute; top: 10px; left: 20px;}
-#Project .items ul .item_con:nth-child(7):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px;}
-#Project .items ul .item_con:nth-child(8):before{content: "#Ect - Video"; position: absolute; top: 10px; left: 20px; color: #fff;}
-#Project .items ul .item_con:nth-child(9):before{content: "#Design - Logo"; position: absolute; top: 10px; left: 20px;}
+#Project .items ul .item_con:nth-child(1):before{content: "#Website"; position: absolute; top: 10px; left: 20px; color: #fff; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(2):before{content: "#Website"; position: absolute; top: 10px; left: 20px; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(3):before{content: "#Website"; position: absolute; top: 10px; left: 20px; color: #fff; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(4):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px; color: #fff; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(5):before{content: "#Website - Group project"; position: absolute; top: 10px; left: 20px; color: #fff; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(6):before{content: "#Design - Banner"; position: absolute; top: 10px; left: 20px; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(7):before{content: "#Design - Details page"; position: absolute; top: 10px; left: 20px; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(8):before{content: "#Ect - Video"; position: absolute; top: 10px; left: 20px; color: #fff; font-size: 1.3rem;}
+#Project .items ul .item_con:nth-child(9):before{content: "#Design - Logo"; position: absolute; top: 10px; left: 20px; font-size: 1.3rem;}
 
 
-@media (max-width:1744px) {
-    #Project .items>ul {justify-content: center;}
-}
 
 @media (max-width:1730px) {
      #Project { padding: 100px 30px;}
@@ -335,7 +346,8 @@ width: 20%; height: 100%; background: #fff; color: var(--main-font-color); box-s
 }
 
 @media (max-width:1550px) {
-    #Project .pro_tab ul {gap: 10px;}
+    #Project .items ul li img {width: 400px; height: 349px; display: block; object-fit:cover}
+    #Project .items ul .item_con {max-width: 400px;}
     #Project .pro_tab ul li button {font-size: 1.5rem;}
 
 }
@@ -430,7 +442,7 @@ border-right:1px solid #023D5D;
 #Professional .prof_top .prof_rigth table tr td:nth-last-of-type(1),#Professional .prof_top .prof_rigth table tr:nth-last-of-type(1) {border-bottom:1px solid #023D5D;}
 
 #Professional .prof_bottom1,
-#Professional .prof_bottom2 {display: flex; gap: 20px; padding-bottom: 20px; flex-wrap: wrap; align-items: center; justify-content: center;}
+#Professional .prof_bottom2 {display: flex; gap: 20px; padding-bottom: 20px; align-items: center; justify-content: center;}
 
 #Professional .prof_bottom1 img , #Professional .prof_bottom2 img {filter: brightness(0.4); display: block;}
 
@@ -501,6 +513,12 @@ border-right:1px solid #023D5D;
      #Professional {padding: 100px 30px;}
     #Professional .prof_bottom1 img , #Professional .prof_bottom2 img {max-width: 380px; width: 100%;}
 }
+
+@media (max-width:1200px) {
+    #Professional .prof_bottom1,
+#Professional .prof_bottom2 {flex-wrap: wrap;}
+}
+
 
 @media (max-width:900px) {
     #Professional .prof_top {justify-content: center;}
